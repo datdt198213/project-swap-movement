@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import './interfaces/ILiquidityValueCalculator.sol';
-import '@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol';
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
+import './uniswap/libraries/UniswapV2Library.sol';
+import './uniswap/interfaces/IUniswapV2Pair.sol';
 
 contract LiquidityValueCalculator is ILiquidityValueCalculator {
     address public factory;
