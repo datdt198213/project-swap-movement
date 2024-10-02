@@ -8,6 +8,7 @@ describe("UniswapV2Factory", function () {
   var uniswapV2Factory: Contract;
   var deployer : Signer;
   
+  // This function will be executed before each test suit called 
   this.beforeEach(async function() {
       [deployer] = await hre.ethers.getSigners();
       uniswapV2FactoryContract = await hre.ethers.getContractFactory("UniswapV2Factory", deployer)

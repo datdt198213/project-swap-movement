@@ -8,6 +8,8 @@ describe("UniswapV2ERC20", function () {
     var uniswapV2ERC20Contract: UniswapV2ERC20__factory;
     var uniswapV2ERC20: Contract;
     var deployer : Signer;
+
+    // This function will be executed before each test suit called 
     this.beforeEach(async function() {
         [deployer] = await hre.ethers.getSigners();
         uniswapV2ERC20Contract = await hre.ethers.getContractFactory("UniswapV2ERC20", deployer)
