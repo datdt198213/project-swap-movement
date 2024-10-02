@@ -1,13 +1,17 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
-
+1. Install dependences of nodejs project
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+npm install
+```
+
+2. Compile contract code before run test
+```shell
+npx hardhat compile
+```
+
+3. Run test <br>
+For example: If test a file UniswapV2ERC20.ts running below command
+```shell
+npx hardhat test test/UniswapV2ERC20.ts
 ```
