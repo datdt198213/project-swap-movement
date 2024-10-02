@@ -3,6 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-ethers";
 
 const config: HardhatUserConfig = {
+  defaultNetwork: "hardhat",
   solidity: {
     version: "0.8.21",
     settings: {
