@@ -19,6 +19,10 @@ const config: HardhatUserConfig = {
       accounts: ["f70920bc474b73aa90bff0d7ac295cd840b72375aeea12b20ff88460dac80f53"],
       chainId: 30732
     },
+    arbitrum_l2: {
+        url: 'https://sepolia-rollup.arbitrum.io/rpc',
+        accounts: ["f70920bc474b73aa90bff0d7ac295cd840b72375aeea12b20ff88460dac80f53"],
+      },
   },
 };
 
